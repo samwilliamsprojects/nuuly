@@ -46,6 +46,7 @@ while item_not_available:
     if desired_size not in disabled_sizes:
         print(f"{desired_size} is available!")
         message = f'Your-nuuly-outfit-{item_name}-is-available!'
-        os.system(f'osascript otherScript.applescript {message}')
+        os.system(f'osascript text_user.applescript {message}')
         item_not_available = False
     time.sleep(30) 
+
